@@ -20,7 +20,7 @@ Lensless imaging replaces lens groups with planar encoding devices to effectivel
 <div align="center"><img src="https://github.com/yqx7150/FLIP/blob/main/Fig2.png"> </div>
 
 ## Four-phase lensless imaging. (a)Target image, (b)Measurement domain images of four phases, (c)Four intermediate images, (d) Reconstructed image.
-<div align="center"><img src="https://github.com/yqx7150/FLIP/blob/main/Fig4.png"> </div>
+<img src="https://github.com/yqx7150/FLIP/blob/main/Fig4.png" style="max-width: 100%; display: block;">
 
 ## Flowchart of FLIP.
 <div align="center"><img src="https://github.com/yqx7150/FLIP/blob/main/Fig3.png"> </div>
