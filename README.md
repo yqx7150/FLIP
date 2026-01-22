@@ -17,7 +17,9 @@ Lensless imaging replaces lens groups with planar encoding devices to effectivel
 <div align="center"><img src="https://github.com/yqx7150/FLIP/blob/main/Fig1.png"> </div>
 
 ## Schematic diagram of four-phase FZA lensless sampling. With the detector held fixed, the projection of a point source is completely sampled at (a) large distances and (b) intermediate distances, whereas at (c) short distances partial sampling leads to undersampling.
-<div align="center"><img src="https://github.com/yqx7150/FLIP/blob/main/Fig2.png"> </div>
+<div align="center">
+    <img src="https://github.com/yqx7150/FLIP/blob/main/Fig2.png" style="width: 60%;">
+</div>
 
 ## Four-phase lensless imaging. (a)Target image, (b)Measurement domain images of four phases, (c)Four intermediate images, (d) Reconstructed image.
 <div style="text-align: center;">
