@@ -20,9 +20,11 @@ Lensless imaging replaces lens groups with planar encoding devices to effectivel
 <div align="center"><img src="https://github.com/yqx7150/FLIP/blob/main/Fig2.png"> </div>
 
 ## Four-phase lensless imaging. (a)Target image, (b)Measurement domain images of four phases, (c)Four intermediate images, (d) Reconstructed image.
-<img src="https://github.com/yqx7150/FLIP/blob/main/Fig4.png" style="max-width: 100%; display: block;">
+<div style="text-align: center;">
+    <img src="https://github.com/yqx7150/FLIP/blob/main/Fig4.png" style="transform: scale(1.5); display: inline-block;">
+</div>
 
-## Flowchart of FLIP.
+## Flowchart of FLIP.(a)Prior learning: masked-sampling intermediate diffusion model (MI-DM) captures gradient priors in undersampled regions, while full-sampling intermediate diffusion model (FI-DM) learns global structure. (b)Image reconstruction: the reconstruction process iteratively alternates between the MI-DM and the FI-DM to achieve accurate image recovery. (c)Data consistency: the measurement data are incorporated into the iterative process as a data-consistency term to ensure data consistency.
 <div align="center"><img src="https://github.com/yqx7150/FLIP/blob/main/Fig3.png"> </div>
 
 ## Reconstruction on the LSUN-Church dataset. (a) GT, (b) SP-BP, (c) BP, (d) CS, (e) ADMM, (f)MIRNet-v2, (g) MLDM_I, (h) FLIP.
