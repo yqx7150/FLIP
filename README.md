@@ -22,10 +22,10 @@ Lensless imaging replaces lens groups with planar encoding devices to effectivel
 ## Four-phase lensless imaging. (a)Target image, (b)Measurement domain images of four phases, (c)Four intermediate images, (d) Reconstructed image.
 <div align="center"><img src="https://github.com/yqx7150/FLIP/blob/main/Figs/fig3.png"> </div>
 
-## Flowchart of FLIP. (a)Prior learning: masked-sampling intermediate diffusion model (MI-DM) captures gradient priors in undersampled regions, while full-sampling intermediate diffusion model (FI-DM) learns global structure. (b)Image reconstruction: the reconstruction process iteratively alternates between the MIDM and the FI-DM to achieve accurate image recovery. (c)Data consistency: the measurement data are incorporated into the iterative process as a data-consistency term to ensure data consistency.
+## Flowchart of FLIP. (a)Prior learning: masked-sampling intermediate diffusion model (MI-DM) captures gradient priors in undersampled regions, while full-sampling intermediate diffusion model (FI-DM) learns global structure. (b)Image reconstruction: the reconstruction process iteratively alternates between the MI-DM and the FI-DM to achieve accurate image recovery. (c)Data consistency: the measurement data are incorporated into the iterative process as a data-consistency term to ensure data consistency.
 <div align="center"><img src="https://github.com/yqx7150/FLIP/blob/main/Figs/fig4.png"> </div>
 
-## Reconstruction on the LSUN-Church dataset. (a) GT, (b) SPBP, (c) BP, (d) CS, (e) ADMM, (f)MIRNet-v2, (g) MLDM_I, (h) FLIP.
+## Reconstruction on the LSUN-Church dataset. (a) GT, (b) SP-BP, (c) BP, (d) CS, (e) ADMM, (f)MIRNet-v2, (g) MLDM_I, (h) FLIP.
 <div align="center"><img src="https://github.com/yqx7150/FLIP/blob/main/Figs/fig5.png"> </div>
 
 ## Requirements and Dependencies
@@ -42,20 +42,20 @@ Lensless imaging replaces lens groups with planar encoding devices to effectivel
 
 ## Checkpoints
 
-UIDM:We provide pretrained checkpoints. You can download pretrained models from  [Baidu cloud](https://pan.baidu.com/s/1bYIXgJ7Rno951dvIh75xVw?pwd=n5xd) Extract the code (hdtp)
+MI-DM:We provide pretrained checkpoints. You can download pretrained models from  [Baidu cloud](https://pan.baidu.com/s/1bYIXgJ7Rno951dvIh75xVw?pwd=n5xd) Extract the code (hdtp)
 
-FIDM:We provide pretrained checkpoints. You can download pretrained models from  [Baidu cloud](https://pan.baidu.com/s/14-5coCKB3Z3vTH4--QvQuw?pwd=9q7s) Extract the code (hdtp)
+FI-DM:We provide pretrained checkpoints. You can download pretrained models from  [Baidu cloud](https://pan.baidu.com/s/14-5coCKB3Z3vTH4--QvQuw?pwd=9q7s) Extract the code (hdtp)
 
 ## Dataset
 The dataset used to train the model in this experiment is  LSUN-bedroom and  LSUN-church.
 
 ## Train:
 
-### UIDM
+### MI-DM
 
 python main.py --config=configs/ve/church_ncsnpp_continuous_qian12tongdao.py  --workdir=exp_train_church_UIDM --mode=train --eval_folder=result
 
-### FIDM
+### FI-DM
 
 python main.py --config=configs/ve/church_ncsnpp_continuous_qian12tongdao.py  --workdir=exp_train_church_FIDM --mode=train --eval_folder=result
 
